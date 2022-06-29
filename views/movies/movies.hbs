@@ -1,0 +1,25 @@
+<div class="listcont">
+    <h2>Movies list</h2>
+
+     <a href="/">Home</a>
+     <br>
+    <table class="styled-table">
+        <tr>
+            <th>title</th>
+            <th></th>
+        </tr>
+        {{#each movieList}}
+        <tr>
+            <td>{{this.title}}</td>
+            <td><a href="movies/{{this.id}}">Show details</a></td>
+            <td><a href="movies/{{this.id}}/edit">Edit movie</a></td>
+            <td>
+                <form action="/movies/{{this.id}}" method="POST">
+                    <button type="submit">Delete</button>
+                </form>
+            </td>  
+        </tr>
+        {{/each}}
+    </table>
+   
+</div>

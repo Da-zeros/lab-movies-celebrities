@@ -1,0 +1,21 @@
+<div class="listcont">
+    <h2>Celebrities list</h2>
+    <a href="/">Home</a>
+    <br>
+    
+    <table class="styled-table">
+        <tr>
+            <th>Name</th>
+            <th>Occupation</th>
+            <th>CatchPhrase</th>
+        </tr>
+        {{#each celebrityList}}
+        <tr>
+            <td>{{this.name}}</td>
+            <td>{{this.occupation}}</td>
+            <td>{{this.catchPhrase}}</td>
+        </tr>
+        {{/each}}
+    </table>
+    
+</div>

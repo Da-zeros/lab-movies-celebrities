@@ -1,0 +1,12 @@
+<div class="contMovieDetail">
+    <h2>Movie name: {{movieDetail.title}}</h2>
+   <hr>
+   <p><span>Genre:</span> {{movieDetail.genre}}</p>
+    <p><span>Plot: </span>{{movieDetail.plot}}</p>
+    {{#each movieDetail.cast}}
+    <p><span>Cast name:</span>{{this.name}}</p>
+    <p><span>Cast ocupation:</span>{{this.occupation}}</p>
+    <p><span>Cast catchPrase:</span>{{this.catchPhrase}}</p>
+    {{/each}}
+    <br>
+    <a href="/">Home
